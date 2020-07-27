@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
   }
 
   for (int i = 0; i < num_threads; ++i) {
-    pthread_join(threads[0], NULL);
+    pthread_join(threads[i], NULL);
   }
 
   free(threads);
