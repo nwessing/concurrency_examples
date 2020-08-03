@@ -28,3 +28,11 @@ JRuby does support parallelism and you can see the same pit
 Javascript is single threaded, does not have a threading API, but it does have an event loop. Using `setTimeout` we can schedule work to happen sometime in the future, and kind of fake threading.
 
 `node main.js`
+
+## Elixir
+`elixir main.exs`
+Runs the example that uses the lower level primitives from the standard library (`send` and `receive`)
+
+`elixir main_idiomatic.exs`
+Runs the example that uses the higher level standard library types (`GenServer` and `Process`) that make it easier to do common concurrent tasks.
+
